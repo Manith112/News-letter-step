@@ -150,45 +150,62 @@ body{
     box-shadow: 0px 20px 10px -5px hsl(4, 59%, 73%);
 }
 
+@media (max-width: 900px) and (min-width: 731px){
+    .container{
+        width: 700px;
+    }
+    .card{
+        padding: 60px 0px;
+        width: 250px;
+    }
+    .img > img{
+        width: 400px;
+        padding-top: 30px;
+        padding-left: 20px;
+    }
+    .email > input, .email > button{
+        width: 250px;
+        
+    }
+}
 
-@media screen and (max-width: 375px){
+
+@media screen and (max-width: 730px){
     /* card 1  */
     .img > img {
         display: none;
     }
     .phone-img{
         display: flex;
-        padding-left: 24px;
+        margin-bottom: 20px;
+    margin-right: 94px;
         
     }
     .container{
-        width: 400px;
-        height: 770px;
+        width: 375px;
+        /* height: 770px; */
        display: flex;
        flex-direction: column-reverse;
         padding: 0px;
         /* margin: 0px; */
         border-radius: 0px;
     }
-    .email > button{
-        width: 350px;
+    .email > button, .email > input{
+        width: 300px;
         
     }
-    .email > input{
-        width: 350px;
-    }
+    
     .card{
-        padding-left: 40px;
-        padding-right: 20px;
+        padding: 20px 60px 20px 40px;
     }
     /* card 2 */
     .submit{
-        width: 400px;
-        height: 750px;
+        width: 375px;
+        
         border-radius: 0px;
     }
     .submit > button {
-        width: 350px;
+        width: 300px;
     }
     .submit > img {
         padding: 100px 0px 20px 0px;
@@ -204,3 +221,12 @@ body{
         margin-top: 260px ;
     }
 }
+
+/* @media screen and (max-width: 400px){
+    .container{
+        width: 300px;
+    }
+    .phone-img{
+        margin-right: 0px;
+    }
+} */
